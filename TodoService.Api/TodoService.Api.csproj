@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <!-- <ApplicationInsightsResourceId>[YOUR_ApplicationInsightsResourceId]</ApplicationInsightsResourceId> -->
+    <!-- <ApplicationInsightsAnnotationResourceId>[YOUR_ApplicationInsightsAnnotationResourceId]</ApplicationInsightsAnnotationResourceId> -->
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="Models\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Middleware\ErrorHandler.cs" />
+    <Compile Remove="Extensions\ExceptionMiddlewareExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoService.Core\TodoService.Core.csproj" />
+    <ProjectReference Include="..\TodoService.Infrastructure\TodoService.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
