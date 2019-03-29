@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.using System
+
+using Newtonsoft.Json;
 
 namespace TodoService.Api.Middleware
 {

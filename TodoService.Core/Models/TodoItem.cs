@@ -1,4 +1,7 @@
-﻿namespace TodoService.Core.Models
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.using System
+
+namespace TodoService.Core.Models
 {
 	public class TodoItem : Entity
 	{

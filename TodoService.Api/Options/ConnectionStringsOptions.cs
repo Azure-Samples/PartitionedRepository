@@ -1,4 +1,7 @@
-﻿namespace TodoService.Api.Options
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.using System
+
+namespace TodoService.Api.Options
 {
     public enum ConnectionStringMode
     {

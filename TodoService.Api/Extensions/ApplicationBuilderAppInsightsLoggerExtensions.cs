@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.using System
+
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Logging;
 
 namespace TodoService.Api.Extensions

@@ -21,9 +21,9 @@ To setup the configuration you need to:
 The local secret store uses a different format than a appSettings.json configuration file.
 Secrets are stored in a file called `secrets.json`, which must be created under the user's profile at the following locations:
 
-* Windows: `%APPDATA%\Microsoft\UserSecrets\07bbd338-bee8-4d8b-a2b8-d15a76ea7e38\secrets.json`
-* macOS: `~/.microsoft/usersecrets/07bbd338-bee8-4d8b-a2b8-d15a76ea7e38/secrets.json`
-* Linux: `~/.microsoft/usersecrets/07bbd338-bee8-4d8b-a2b8-d15a76ea7e38/secrets.json`
+* Windows: `%APPDATA%\Microsoft\UserSecrets\<GUID>\secrets.json`
+* macOS: `~/.microsoft/usersecrets/<GUID>/secrets.json`
+* Linux: `~/.microsoft/usersecrets/<GUID>/secrets.json`
 
 Note that the GUID is project specific and defined in the .csproj file as UserSecretsId. Please see [Safe storage of app secrets in development in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=macos) for more information on setting up a local secret store.
 
