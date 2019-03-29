@@ -1,4 +1,5 @@
-# Subway Remote Order Cosmos DB Collections Creation script
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
 
 # The script will create Cosmos Account / Database and Collections If it does not exists
 #
