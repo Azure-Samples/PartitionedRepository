@@ -20,7 +20,7 @@ param(
       [Parameter(Mandatory=$True)]      
       [string]$cosmosDatabase  = $(throw "-cosmosDatabase is required."),
       [Parameter(Mandatory=$True)]      
-      [string]$cosmosCollections  = $(throw "-cosmosCollections is required.")
+      [string]$cosmosCollections  = $(throw "-cosmosCollections is required."),
       [Parameter(Mandatory=$True)]      
       [string]$cosmosCollectionsPK  = $(throw "-cosmosCollectionsPK is required.")
 )
