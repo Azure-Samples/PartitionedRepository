@@ -1,3 +1,14 @@
+---
+page_type: sample
+languages:
+- csharp
+- powershell
+products:
+- azure
+description: ""
+urlFragment: 
+---
+
 # Repository Pattern with Azure Cosmos DB SQL API
 
 This project implements a sample to-do service using ASP.NET core. It demonstrates how to use the repository pattern with Azure Cosmos DB SQL API. It also demonstrates other best practices for Azure hosted ASP.NET core web applications, such as logging and telemetry with Application Insights and key/secret management via Azure Key Vault.
