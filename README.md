@@ -5,8 +5,8 @@ languages:
 - powershell
 products:
 - azure
-description: ""
-urlFragment: 
+description: "This project implements a to-do service using ASP.NET Core. It demonstrates how to use the repository pattern with Azure Cosmos DB SQL API."
+urlFragment: repository-pattern-with-azure-cosmos-db-sql-api
 ---
 
 # Repository Pattern with Azure Cosmos DB SQL API
